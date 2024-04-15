@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.cell:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#reset-btn {
+    margin-bottom: 10px;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #0056b3;
+}
+
+#player-turn {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: green;
+}
+
+
+
+.win-message {
+    color: green;
+    transition: color 0.5s ease;
+}
+
+.draw-message {
+    color: gray;
+    transition: color 0.5s ease;
+}
